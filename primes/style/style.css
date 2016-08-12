@@ -1,0 +1,44 @@
+body * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+
+body > * {
+    max-width: 900px;
+    margin: auto;
+}
+
+header hgroup {
+    padding: 50px;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #016293;
+    padding: 20px 0 10px 0;;
+}
+
+nav ul, footer ul, article ul {
+    list-style-type: none;
+}
+
+article {
+    margin: 10px 0 20px 0;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 50%;
+    min-width: 19%;
+}
+

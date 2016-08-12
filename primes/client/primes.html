@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Primes Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <script src="batcher.js"></script>
+    <script src="updateux.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <table>
+        <caption>Sieve Control Panel</caption>
+        <tr>
+            <td>
+                <label for="min">Inclusive Minimum</label>
+            </td>
+            <td>
+                <input type="number" value="0" id="min" placeholder="min">
+            </td>
+            <br>
+        </tr>
+        <tr>
+            <td>
+                <label for="max">Exclusive Maximum</label>
+            </td>
+            <td>
+                <input type="number" value="10000000" id="max" placeholder="max">
+            </td>
+            <br>
+        </tr>
+        <tr>
+            <td>
+                <input class="action-button" type="button" id="toggleCalc" value="Find Primes">
+            </td>
+            <td>
+                <input type="button" class="action-button" id="exportJson" value="Export to JSON">
+                <a id="downloadHelper"></a>
+                </input>
+            </td>
+        </tr>
+    </table>
+    <div id="outputDiv">
+        <div>
+            <h3>Highest Prime:</h3> null
+        </div>
+        <div>
+            <h3>Count Of Primes:</h3> null
+        </div>
+    </div>
+</body>
+
+</html>
